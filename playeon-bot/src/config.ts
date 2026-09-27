@@ -43,7 +43,7 @@ export const config = {
   logGroupId: optional('LOG_GROUP_ID') ? parseInt(optional('LOG_GROUP_ID')!, 10) : null,
   defaultPrefix: process.env['DEFAULT_PREFIX'] ?? '/',
   sessionName: process.env['SESSION_NAME'] ?? 'playeon-session',
-  webPublicUrl: (process.env['WEB_PUBLIC_URL'] ?? 'https://playeon-bot.xysushi.in').replace(/\/+$/, ''),
+  webPublicUrl: (process.env['WEB_PUBLIC_URL'] ?? 'https://music.deltastack.fun').replace(/\/+$/, ''),
   room: {
     wsPort: parseInt(process.env['ROOM_WS_PORT'] ?? '3067', 10),
     publicUrl: (devMode
