@@ -3,7 +3,7 @@ import os from "node:os";
 import type { NextConfig } from "next";
 
 function getLocalIps(): string[] {
-  const ips: string[] = ["localhost", "127.0.0.1", "172.202.106.33", "music.deltastack.fun"];
+  const ips: string[] = ["localhost", "127.0.0.1", "172.202.106.33", "musicapp.deltastack.fun", "music.deltastack.fun"];
   try {
     const ifaces = os.networkInterfaces();
     for (const name of Object.keys(ifaces)) {
