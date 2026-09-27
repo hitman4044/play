@@ -48,7 +48,7 @@ export const config = {
     wsPort: parseInt(process.env['ROOM_WS_PORT'] ?? '3067', 10),
     publicUrl: (devMode
       ? (process.env['ROOM_DEV_PUBLIC_URL'] ?? `http://${localLanIp}:${process.env['ROOM_WS_PORT'] ?? '3067'}`)
-      : (process.env['ROOM_PUBLIC_URL'] ?? `http://localhost:${process.env['ROOM_WS_PORT'] ?? '3067'}`)).replace(/\/+$/, ''),
+      : (process.env['ROOM_PUBLIC_URL'] ?? `https://music.deltastack.fun:${process.env['ROOM_WS_PORT'] ?? '3067'}`)).replace(/\/+$/, ''),
     jwtSecret: process.env['ROOM_JWT_SECRET'] || required('BOT_TOKEN'),
     botUsername: optional('BOT_USERNAME'),
     maxQueue: parseInt(process.env['ROOM_MAX_QUEUE'] ?? '50', 10),
